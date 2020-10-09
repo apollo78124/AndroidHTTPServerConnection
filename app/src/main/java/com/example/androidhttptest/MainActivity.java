@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
             HttpURLConnection urlConnection = null;
             BufferedReader reader = null;
             try {
-                //URL url = new URL("http://10.0.2.2:8888/midp/hits");
-                URL url = new URL(urls[0]);
+                URL url = new URL("http://10.0.2.2:8080/midp/hits");
+                //URL url = new URL(urls[0]);
                 // Create the request to OpenWeatherMap, and open the connection
                 urlConnection = (HttpURLConnection) url.openConnection();
                 urlConnection.setRequestMethod("GET");
